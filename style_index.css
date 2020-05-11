@@ -1,0 +1,55 @@
+h1 {
+    font-size: 80px;    
+    position: relative;
+    left: 7%; 
+ 
+ }
+
+.stefan {
+    position: relative;
+    left:7%;
+}
+
+
+body {
+    background-color: #466995;
+    color: #DBE9EE;
+    margin-bottom: 100px;
+    width: 90%;
+}
+
+.info{
+    position: absolute;
+    left: 50%;
+    top: 250px;
+    font-size: 30px;
+}
+
+.quote {
+    position: relative;
+    left: 7%;
+    top: 30px;
+    font-size: 24px;
+}
+
+header {
+    position: fixed;
+    color: #466995;
+    background-color: #DBE9EE;
+    width: 100%;
+    z-index: 1;
+    top: 0px;  
+}
+
+a {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+    left: 190px;
+}
+
+#author {
+    font-size: 18px;
+}
+

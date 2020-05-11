@@ -1,0 +1,43 @@
+body {
+    background-image: url(./asserts/Wald.jpg);
+    background-size: contain;
+    overflow: scroll;
+    }
+
+a {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+    left: 190px;
+}
+
+header {
+    position: fixed;
+    color: #524695;
+    background-color: #DBE9EE;
+    width: 100%;
+    z-index: 1;
+    top: 0px;  
+}
+
+h1{
+    position: relative;
+    left: 100px;
+}
+
+div {
+    position: relative;
+    top: 100px;
+    left: 100px;
+    color: #DBE9EE;
+    width: 50%;
+    background-color: #466995;
+    opacity: 0.8;
+    padding: 10px;
+    border: 3px solid #DBE9EE;
+    margin-bottom: 100px;
+    border-radius: 5%;
+}
+
+

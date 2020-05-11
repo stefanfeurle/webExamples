@@ -1,0 +1,96 @@
+header {
+    position: fixed;
+    color: #524695;
+    background-color: #DBE9EE;
+    width: 100%;
+    z-index: 1;
+    top: 0px;
+}
+
+.liste {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    font-size: 20px;
+}
+
+div {
+    position: relative;
+    top: 80px;
+    left: 7%;
+    width: 80%;
+}
+
+body {
+    overflow: scroll;
+    width: 90%;
+}
+
+#galerie {
+    position: relative;
+    
+    margin-bottom: 100px;  
+}
+
+.image {  
+    display: inline-block;
+    box-sizing: border-box;
+    list-style-type: none;
+    width: 24.5%;
+    position: relative;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    width: 100%;      
+}
+
+#image1 {
+    width: 100%;
+}
+
+#image2 {
+    width: 100%;
+    height: 100%;
+}
+
+button {
+    padding: 0.1em;
+}
+
+@media all and (min-width: 1em) {
+    button:focus,
+    button:hover {
+        background: #09c;
+    }
+}
+
+@media all and (min-width: 1em) {
+    button {
+        padding: 0.1em;
+        width: 100%;
+        height: 20em;
+        position: relative;
+    }
+    
+    button img {
+        border: 0;
+        position: absolute;
+        left: 0%;
+        top: 0%;       
+        box-shadow: 0;
+        transition: all 0.1s;
+    }
+
+    button:focus img,
+    button:hover img {
+        border: 2em solid #eee;
+        border-radius: 1 em;
+        box-shadow: 1px 1px 5px #333;
+        z-index: 2;
+        left: -4%;
+        top: -4%;        
+        transition: all 0.5s;
+    }
+}
