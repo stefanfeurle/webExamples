@@ -17,19 +17,21 @@ header {
 div {
     position: relative;
     top: 80px;
-    left: 7%;
-    width: 80%;
+    left: 5%;
+    width: 87%;
+    border: 10px solid #524695;
+    padding: 2% 0 3% 4%;
 }
 
 body {
     overflow: scroll;
-    width: 90%;
+    margin-bottom: 100px;
+    
 }
 
 #galerie {
     position: relative;
-    
-    margin-bottom: 100px;  
+    left: -3%;  
 }
 
 .image {  
