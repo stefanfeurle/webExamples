@@ -2,7 +2,8 @@
 <html>
     <head>
         <link href="style_sonstiges.css" type="text/css" rel="stylesheet">
-        <title>Sonstiges-Meine erste Webseite</title> 
+        <script src="js_sonstiges.js"></script>
+        <title>Sonstiges-Meine erste Webseite</title>     
     </head>
     <body>
         <header>
@@ -26,27 +27,35 @@
             </ul><br>
             <h2>Privater Einblick</h2>
             <ul id="galerie">
-                <li class="image"><button tabindex="1"><img id="image1" src="asserts/Fenster_des_Lebens.jpg" alt="Einblick hinter den Vorhang"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Blütezeit.jpg" alt="Das Frühlingserwachen"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Michelle_am_Reiten.jpg" alt="Die Reiterin"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/HochzeitAndi.jpg" alt="Hochzeit von Freunden"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Zunge_von_Michelle.jpg" alt="Heidelbeerzunge"></button></li>
-                <li class="image"><button tabindex="1"><img id="image1" src="asserts/Hochzeit.jpg" alt="Mutig mutig"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Michelle_im_Tierpark.jpg" alt="Wunderland Tierpark"></button></li>
-                <li class="image"><button tabindex="1"><img id="image1" src="asserts/Familie1.jpg" alt="Unsere Thermenbesuche"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Winterlandschaft.jpg" alt="Traumhafte Winterlandschaft"></button></li>
-                <li class="image"><button tabindex="1"><img id="image1" src="asserts/Mama&Winterlandschaft.jpg" alt="Winterwanderung"></button></li>
-                <li class="image"><button tabindex="1"><img id="image1" src="asserts/Michelle&Skifahren.jpg" alt="Skikurs"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Papa&Skifahren.jpg" alt="Skifahren"></button></li>
-                <li class="image"><button tabindex="1"><img id="image1" src="asserts/Marielle.jpg" alt="Michelle mit Marielle am Skifahren"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Strandmuscheln.jpg" alt="Muscheln am Strand"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Familie2.jpg" alt="Familienzeit"></button></li>
-                <li class="image"><button tabindex="1"><img id="image1" src="asserts/Parasailing.JPG" alt="Parasailing"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/beautyMama.jpg" alt="sexy sexy"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/M&M_am_Strand.jpg" alt="Meine Mädels"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Familie_am_Strand.jpg" alt="Sonnenuntergang"></button></li>
-                <li class="image"><button tabindex="1"><img id="image2" src="asserts/Farben_des_Himmels.jpg" alt="Die Schönheit des Himmels"></button></li>
+                <li class="image"><button tabindex="1"><img class="image1" id ="img1" onclick="openNewBox(1)" src="asserts/Fenster_des_Lebens.jpg" alt="Einblick hinter den Vorhang"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img2" onclick="openNewBox(2)" src="asserts/Blütezeit.jpg" alt="Das Frühlingserwachen"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img3" onclick="openNewBox(3)" src="asserts/Michelle_am_Reiten.jpg" alt="Die Reiterin"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img4" onclick="openNewBox(4)" src="asserts/HochzeitAndi.jpg" alt="Hochzeit von Freunden"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img5" onclick="openNewBox(5)" src="asserts/Zunge_von_Michelle.jpg" alt="Heidelbeerzunge"></button></li>
+                <li class="image"><button tabindex="1"><img class="image1" id ="img6" onclick="openNewBox(6)" src="asserts/Hochzeit.jpg" alt="Mutig mutig"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img7" onclick="openNewBox(7)" src="asserts/Michelle_im_Tierpark.jpg" alt="Wunderland Tierpark"></button></li>
+                <li class="image"><button tabindex="1"><img class="image1" id ="img8" onclick="openNewBox(8)" src="asserts/Familie1.jpg" alt="Unsere Thermenbesuche"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img9" onclick="openNewBox(9)" src="asserts/Winterlandschaft.jpg" alt="Traumhafte Winterlandschaft"></button></li>
+                <li class="image"><button tabindex="1"><img class="image1" id ="img10" onclick="openNewBox(10)" src="asserts/Mama&Winterlandschaft.jpg" alt="Winterwanderung"></button></li>
+                <li class="image"><button tabindex="1"><img class="image1" id ="img11" onclick="openNewBox(11)" src="asserts/Michelle&Skifahren.jpg" alt="Skikurs"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img12" onclick="openNewBox(12)" src="asserts/Papa&Skifahren.jpg" alt="Skifahren"></button></li>
+                <li class="image"><button tabindex="1"><img class="image1" id ="img13" onclick="openNewBox(13)" src="asserts/Marielle.jpg" alt="Michelle mit Marielle am Skifahren"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img14" onclick="openNewBox(14)" src="asserts/Strandmuscheln.jpg" alt="Muscheln am Strand"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img15" onclick="openNewBox(15)" src="asserts/Familie2.jpg" alt="Familienzeit"></button></li>
+                <li class="image"><button tabindex="1"><img class="image1" id ="img16" onclick="openNewBox(16)" src="asserts/Parasailing.JPG" alt="Parasailing"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img17" onclick="openNewBox(17)" src="asserts/beautyMama.jpg" alt="sexy sexy"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img18" onclick="openNewBox(18)" src="asserts/M&M_am_Strand.jpg" alt="Meine Mädels"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img19" onclick="openNewBox(19)" src="asserts/Familie_am_Strand.jpg" alt="Sonnenuntergang"></button></li>
+                <li class="image"><button tabindex="1"><img class="image2" id ="img20" onclick="openNewBox(20)" src="asserts/Farben_des_Himmels.jpg" alt="Die Schönheit des Himmels"></button></li>
             </ul>
+        </div>
+        <div class="box" id="myBox">
+            <span id="page">/20</span>
+            <span class="close" onclick="closeBox()">&times;</span>
+            <span class="last" onclick="lastImage()">&#10094;</span>
+            <span class="next" onclick="nextImage()">&#10095;</span>
+            <img class="box-content" id="image">
+            <figcaption id="caption"></figcaption>
         </div>
     </body>
 </html>
