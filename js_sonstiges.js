@@ -26,14 +26,24 @@ function showImage(imageNumber) {
     }
    
     var img = document.getElementById(id).src;
-    var boxImage = document.getElementById("image");
+    var boxImage = document.getElementById("box-content");
     var captionText = document.getElementById(id).alt;  
     
     box.style.display = "block";
     boxImage.src = img;
+    //boxImage.style.webkitAnimationPlayState = "paused";
+    //boxImage.style.webkitAnimation.zoom = "initial";
+    //boxImage.style.webkitAnimationName = "zoom";
+    //boxImage.style.webkitAnimationDuration = 0.8;
+    //boxImage.style.webkitAnimation.zoom.scale = 0;
+    
     boxImage.style.width = widthImage;
+    //boxImage.style.animation = "zoom 0.8 1"
+    
+    //boxImage.style.webkitAnimationPlayState = "running";
     document.getElementById("page").innerHTML = page;
     document.getElementById("caption").innerHTML = captionText;
+    //document.getElementById("myDIV").style.animation = "mynewmove 4s 2";
 }
 
 function closeBox() {

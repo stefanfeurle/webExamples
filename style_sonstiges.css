@@ -110,7 +110,7 @@ button {
     overflow: scroll;
 }
 
-.box-content {
+#box-content {
     margin: auto;
     display: block;   
 }
@@ -136,11 +136,12 @@ button {
     transition: 0.3s;
   }
 
-  .box-content, #caption {  
+  #box-content, #caption {  
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.8s;
     animation-name: zoom;
     animation-duration: 0.8s;
+    transition: 1.0s;
   }
 
   @-webkit-keyframes zoom {
